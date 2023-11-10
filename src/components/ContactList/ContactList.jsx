@@ -15,7 +15,7 @@ export const ContactList = () => {
     const phoneBook = useSelector(getPhoneBookValue);
     const filterPhoneBook = useSelector(getFilter);
 
-    const lowerFilter = filterPhoneBook.toLowerCase();
+    const lowerFilter = filterPhoneBook.toLowerCase().trim();
     const visibleContacts = phoneBook.filter(({ name }) =>
         (name.toLowerCase().includes(lowerFilter)));
   

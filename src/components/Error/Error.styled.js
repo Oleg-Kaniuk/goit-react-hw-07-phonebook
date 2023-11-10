@@ -7,5 +7,6 @@ export const Err = styled.div`
     width: 400px;
     font-weight: 500;
     font-size: 20px;
-    background-color: #fa0e0ef6;
+    color: red;
+    background-color: black;
 `;
